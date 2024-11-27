@@ -17,7 +17,7 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js')
     .then(function(registration){
         console.log('serviceWorker を登録しました。');
-    }).catch(function(error)){
+    }).catch(function(error){
         console.log('serviceWorker に対応してないよ。');
     });
 } else {
