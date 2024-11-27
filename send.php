@@ -16,11 +16,11 @@ $webPush = new \Minishlink\WebPush\WebPush([
 // push通知認証用のデータ
 $subscription = \Minishlink\WebPush\Subscription::create([
     // ↓検証ツール > console に表示された endpoint URL を入力
-    'endpoint' => 'https://fcm.googleapis.com/fcm/send/cIMRBkVqxEU:APA91bG1sC6o_4lkqx0vQUH3Xv5FFTu7hgxiQtC6PcPOkBYDeTteECNrQKULR3_rB3kRJMAxBqdgCfchBmDklyuYJ6ErJ17BBU96BFx71l7KbipIRQi8vW83hviFz242h8aJWx4XR1Yw',
+    'endpoint' => 'https://fcm.googleapis.com/fcm/send/e8ayaH-tKNk:APA91bG-XzFcZDZFnVBHWFKHsvMRWFwSk4lUBk-jbO3WT4md-yB6-RoKnruWgJauV_Flb-aRz4X2wmP_IGo5bCvEaav_kydoRIZZhJ6NKL0yD55Nb8bWKvn-l3nWdw4tFY6adVOnXJWV',
     // ↓検証ツール > console に表示された push_public_key を入力
-    'publicKey' => 'BJB+LiTqUJvseFW0EOh+BLUVnwQloZQn6nxOcaHfwGhJ/ddIflTELOULG8cjG3NjrYAFOcGknsFMFfPzjAuXyPc=',
+    'publicKey' => 'BLyYgCSEXD2w07fz5wdoEZaJgGy2O0jCGWfUwXs2cxM7NUao2Vctgs5AigS2pj9JfgcT9iBMRL+GOif8rJcPhFI=',
     // ↓検証ツール > console に表示された push_auth_token を入力
-    'authToken' => 'ZVp3EehDgwed7eDlyknlnA==',
+    'authToken' => 'nX29Gw8cB2ioQcA7l8pKaA==',
 ]);
 // pushサーバーに通知リクエストをjson形式で送る
 $report = $webPush->sendOneNotification(
